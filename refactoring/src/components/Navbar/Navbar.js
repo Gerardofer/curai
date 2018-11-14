@@ -39,34 +39,26 @@ class Navbar extends Component {
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               <li className="nav-item active">
                 <a className="nav-link" href="#">
-                  Home <span className="sr-only">(current)</span>
+                  HOW IT WORKS
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item active">
                 <a className="nav-link" href="#">
-                  Link
+                  OUR DOCTORS
                 </a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" href="#">
-                  Disabled
+              <li className="nav-item active">
+                <a className="nav-link" href="#">
+                  FAQ
+                </a>
+              </li>
+              <li className="nav-item active">
+                <a className="nav-link" href="#">
+                  MY ACCOUNT
                 </a>
               </li>
             </ul>
-            <form className="form-inline my-2 my-lg-0">
-              <input
-                className="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button
-                className="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-              >
-                Search
-              </button>
-            </form>
+              <button className="btn btn-outline-success my-2 my-sm-0" type="submit">TALK TO A DOCTOR</button>
           </div>
         </nav>
       </div>
