@@ -35,8 +35,8 @@ class Navbar extends Component {
             <img id="first-opinion" src={firstOpinion} alt="First Opinion" />
           </a>
 
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+          <div className="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+            <ul className="navbar-nav">
               <li className="nav-item active">
                 <a className="nav-link" href="#">
                   HOW IT WORKS
