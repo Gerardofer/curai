@@ -1,0 +1,6 @@
+.backgroun-image {
+    background-image: url("./images/background-1.jpg");
+    /*display: inline-block;*/
+    max-width: 100%;
+    height: 600px;
+}
