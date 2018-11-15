@@ -51,34 +51,36 @@ class Navbar extends Component {
           >
             <span className="navbar-toggler-icon" />
           </button>
-          <a className="navbar-brand" href="http://www.firstopinionapp.com">
-            <img id="first-opinion" src={firstOpinion} alt="First Opinion" />
-          </a>
-
-          <div className="collapse navbar-collapse justify-content-end" id="nav-links">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  HOW IT WORKS
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  OUR DOCTORS
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  FAQS
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  MY ACCOUNT
-                </a>
-              </li>
-            </ul>
-              <button id="talk-to-doctor" className="btn btn-outline-success my-2 my-sm-0" type="submit">TALK TO A DOCTOR</button>
+          <div className="container">
+            <a className="navbar-brand" href="http://www.firstopinionapp.com">
+              <img id="first-opinion" src={firstOpinion} alt="First Opinion" />
+            </a>
+  
+            <div className="collapse navbar-collapse justify-content-end" id="nav-links">
+              <ul className="navbar-nav">
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    HOW IT WORKS
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    OUR DOCTORS
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    FAQS
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#">
+                    MY ACCOUNT
+                  </a>
+                </li>
+              </ul>
+                <button id="talk-to-doctor" className="btn btn-outline-success my-2 my-sm-0" type="submit">TALK TO A DOCTOR</button>
+            </div>
           </div>
         </nav>
       </div>

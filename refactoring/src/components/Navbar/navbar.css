@@ -10,8 +10,8 @@ nav.sticky-top {
 }
 
 #first-opinion {
-  width: 8rem;
-  height: 7rem;
+  width: 125px;
+  height: 88px;
 }
 
 .scrolled-nav{
@@ -25,11 +25,11 @@ nav.sticky-top {
 }
 
 #nav-links {
-  font-size: 14px;
+  font-size: 17px;
 }
 
 #talk-to-doctor {
-  font-size: 14px;
+  font-size: 17px;
 }
 
 .navbar-light .navbar-nav .nav-link {

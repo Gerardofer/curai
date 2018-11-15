@@ -10,7 +10,7 @@ const Header = () => {
           <br />
           Doctors available 24/7.
         </h1>
-        <p className=" body-text">Connect with a doctor today</p>
+        <h3 className="body-text">Connect with a doctor today</h3>
       </div>
     </div>
   );
