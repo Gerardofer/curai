@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Location from "../Location/Location";
+import states from "./states";
 import "./doctorForm.css";
 
 
@@ -9,24 +9,28 @@ import "./doctorForm.css";
 class DoctorForm extends Component{
     state = {
         age: "",
-        gender: ""
+        gender: "",
+        location: ""
     }
     
     handleChange = (event) => {
         
         this.setState({
-            age: event.target.value,
-            gender: event.target.value
+            [event.target.name]: event.target.value
         });
+        
         console.log(this.state);
     }
     
     handleSubmit = (event) => {
         event.preventDefault();
+        
         console.log(this.state);
+        
         this.setState({
-            age: 0,
-            gender: ""
+            age: "",
+            gender: "",
+            location: ""
         });
         
         console.log(this.state);
@@ -34,7 +38,11 @@ class DoctorForm extends Component{
     
     render(){
         
-        const { age, gender } = this.state;
+        const { age, gender, location } = this.state;
+        
+        const estado = states.map((i, e) => {
+            return (<option key={e} value={i}>{i}</option>);
+        });
         
         return(
         <div>
@@ -52,14 +60,22 @@ class DoctorForm extends Component{
                     <div className="col-md-2">
                         <select 
                         className="custom-select"
+                        name="gender"
                         value={gender}
                         onChange={this.handleChange}>
+                            <option value=""></option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
                     </div>
                     <div className="col-md-4">
-                       <Location />
+                        <select 
+                        className="custom-select"
+                        name="location"
+                        value={location}
+                        onChange={this.handleChange}>
+                            {estado}
+                        </select> 
                     </div>
                     <div className="col-md-4">
                         <button className="btn btn-outline-light">TALK TO A DOCTOR NOW</button>
