@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import states from "./states";
 import "./doctorForm.css";
 
-
-
-//I need to keep the state here and pass it down as props to the other components.
-
 class DoctorForm extends Component{
     state = {
         age: "",
@@ -19,13 +15,10 @@ class DoctorForm extends Component{
             [event.target.name]: event.target.value
         });
         
-        console.log(this.state);
     }
     
     handleSubmit = (event) => {
         event.preventDefault();
-        
-        console.log(this.state);
         
         this.setState({
             age: "",
