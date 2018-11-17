@@ -75,6 +75,10 @@ class DoctorForm extends Component{
                     </div>
                 </div>
             </form>
+            <div>
+                <i class="fa fa-play-circle-o" aria-hidden="true"></i>
+             <a className="video-link" href="https://www.youtube.com/embed/lP0Mp-R5zvw?autoplay=1"><p>Watch the Video</p></a> 
+            </div>
         </div>    
         );
     }
